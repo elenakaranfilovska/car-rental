@@ -8,5 +8,12 @@
     <artifactId>car-rental</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>shared-kernel</module>
+        <module>user-management</module>
+        <module>vehicle-catalog</module>
+        <module>rent-management</module>
+    </modules>
+
 
 </project>

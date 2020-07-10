@@ -75,6 +75,8 @@ public class CreateRentView extends VerticalLayout {
                 .asRequired()
                 .bind(RentForm::getVehicle, RentForm::setVehicle);
         binder.forField(user).asRequired().bind(RentForm::getUser,RentForm::setUser);
+        var adr = new Html("<h4>Billing Address</h4>");
+        add(adr);
         var billingAddress = new AddressLayout();
         billingAddress.bind(binder, RentForm::getBillingAddress);
         add(billingAddress);
